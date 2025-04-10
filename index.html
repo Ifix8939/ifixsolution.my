@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ifix Solution Enterprise</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: white;
+    }
+
+    header {
+      background-color: #00d1b2;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 80px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 30px 20px;
+    }
+
+    h2 {
+      color: #00d1b2;
+    }
+
+    .services .service {
+      background-color: #2a2a2a;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-left: 5px solid #00d1b2;
+    }
+
+    .contact, .booking {
+      background-color: #2a2a2a;
+      padding: 30px 20px;
+      margin-top: 20px;
+    }
+
+    .contact h2, .booking h2 {
+      color: #00d1b2;
+    }
+
+    .booking form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .booking label {
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #00d1b2;
+    }
+
+    .booking input,
+    .booking textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .booking button {
+      padding: 10px;
+      background-color: #00d1b2;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .booking button:hover {
+      background-color: #00b39b;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="ifix-logo.png" alt="Ifix Solution Logo">
+      <div>
+        <h1>Ifix Solution Enterprise</h1>
+        <p>Your Go-To for Reliable Gym Equipment Service.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service">Supply of gym equipment</div>
+    <div class="service">Installation</div>
+    <div class="service">Dismantle</div>
+    <div class="service">Relocation</div>
+    <div class="service">Repair</div>
+    <div class="service">Maintenance</div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> <a href="tel:0174694697" style="color: #00d1b2;">017-469 4697</a></p>
+    <p><strong>Email:</strong> <a href="mailto:ifixsolution8939@gmail.com" style="color: #00d1b2;">ifixsolution8939@gmail.com</a></p>
+  </section>
+
+  <section class="booking">
+    <h2>Book a Service</h2>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" placeholder="Address" required>
+
+      <label for="message">What do you need help with?</label>
+      <textarea id="message" name="message" rows="4" placeholder="What do you need help with?" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Ifix Solution Enterprise. All rights reserved.
+  </footer>
+</body>
+
+</html>
