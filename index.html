@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ifix Solution Enterprise</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #1c1c1c;
+      color: white;
+    }
+
+    header {
+      background-color: #00c9b7;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .services div,
+    .contact div {
+      margin-bottom: 10px;
+      background-color: #2a2a2a;
+      padding: 10px;
+      border-left: 4px solid #00c9b7;
+    }
+
+    h2 {
+      color: #00c9b7;
+    }
+
+    .form-container {
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      padding: 8px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      width: 200px;
+    }
+
+    textarea {
+      height: 60px;
+    }
+
+    button {
+      padding: 8px 16px;
+      background-color: #00c9b7;
+      border: none;
+      cursor: pointer;
+    }
+
+    .thank-you {
+      margin-top: 15px;
+      color: #00ff88;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #111;
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="ifix-logo.png" alt="Ifix Logo" />
+    <div>
+      <h1>Ifix Solution Enterprise</h1>
+      <p>Your Go-To for Reliable Gym Equipment Service.</p>
+    </div>
+  </header>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div>Supply of gym equipment</div>
+    <div>Installation</div>
+    <div>Dismantle</div>
+    <div>Relocation</div>
+    <div>Repair</div>
+    <div>Maintenance</div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <div><strong>Phone:</strong> <a href="tel:0174694697" style="color:#00c9b7;">017-469 4697</a></div>
+    <div><strong>Email:</strong> <a href="mailto:ifixsolution8939@gmail.com" style="color:#00c9b7;">ifixsolution8939@gmail.com</a></div>
+  </section>
+
+  <section class="form-container">
+    <h2>Book a Service</h2>
+    <form id="booking-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="address" placeholder="Address" required />
+      <br />
+      <textarea name="message" placeholder="What do you need help with?" required></textarea>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <div class="thank-you" id="thank-you-msg" style="display: none;">
+      Thank you! We’ve received your request and will get in touch soon.
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Ifix Solution Enterprise. All rights reserved.
+  </footer>
+
+  <script>
+    const form = document.getElementById('booking-form');
+    const thankYou = document.getElementById('thank-you-msg');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // stop page refresh
+      form.reset(); // clear form fields
+      thankYou.style.display = 'block'; // show thank you message
+    });
+  </script>
+
+</body>
+</html>
